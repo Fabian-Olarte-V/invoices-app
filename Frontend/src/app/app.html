@@ -1,0 +1,12 @@
+<nav class="main-nav">
+    <div class="nav-container">
+        <a class="nav-logo" routerLink="/">Sistema de facturas</a>
+        <div class="nav-links">
+            <a routerLink="/invoices" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+            <a routerLink="/invoices/list" routerLinkActive="active">Facturas</a>
+            <a routerLink="/invoices/create" routerLinkActive="active">Crear factura</a>
+        </div>
+    </div>
+</nav>
+
+<router-outlet />

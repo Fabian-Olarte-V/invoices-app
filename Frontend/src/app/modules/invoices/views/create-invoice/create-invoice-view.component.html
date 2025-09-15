@@ -1,0 +1,15 @@
+<div class="create-invoice-container">
+    <div class="header-container">
+        <h1>Crear Nueva Factura</h1>
+        <button class="new-invoice-btn" (click)="resetForm()">
+            <i class="fas fa-plus"></i> Nueva Factura
+        </button>
+    </div>
+    <app-invoice-form
+        [clients]="clients"
+        [products]="products"
+        (submitInvoice)="onInvoiceSubmit($event)"
+        #invoiceFormComponent
+    >
+    </app-invoice-form>
+</div>

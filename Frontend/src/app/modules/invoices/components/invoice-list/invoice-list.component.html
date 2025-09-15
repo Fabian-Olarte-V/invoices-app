@@ -1,0 +1,81 @@
+<div class="invoice-list-container">
+    <div class="search-section">
+        <form [formGroup]="searchForm" (ngSubmit)="onSearch()" class="search-form">
+            <div class="search-type">
+                <label class="radio-label">
+                    <input type="radio" formControlName="searchType" value="client">
+                    <span>Por Cliente</span>
+                </label>
+                <label class="radio-label">
+                    <input type="radio" formControlName="searchType" value="invoice">
+                    <span>Por Factura</span>
+                </label>
+            </div>
+
+            <div class="search-inputs">
+                @if (searchType === 'client') {
+                    <div class="input-group">
+                        <select formControlName="clientId" class="form-control">
+                            <option value="">Seleccione un cliente</option>
+                            @if (clients.length > 0) {
+                                @for (client of clients; track client.id) {
+                                    <option [value]="client.id">{{client.bussinessName}}</option>
+                                }
+                            } @else {
+                                <option value="" disabled>No hay clientes disponibles</option>
+                            }
+                        </select>
+                    </div>
+                } @else {
+                    <div class="input-group">
+                        <input type="text" 
+                            formControlName="invoiceNumber" 
+                            placeholder="Número de factura"
+                            class="form-control"
+                        />
+                    </div>
+                }
+
+                <button type="submit" class="btn-search" [disabled]="!searchForm.valid">Buscar</button>
+            </div>
+        </form>
+    </div>
+
+    @if (invoices.length > 0) {
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Número de Factura</th>
+                        <th>Fecha Emisión</th>
+                        <th>Total Facturado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (invoices.length > 0) {
+                        @for (invoice of invoices; track invoice.id) {
+                            <tr>
+                                <td>{{invoice.invoiceNumber}}</td>
+                                <td>{{invoice.createdDate | date:'dd/MM/yyyy'}}</td>
+                                <td>{{invoice.total | currency}}</td>
+                            </tr>
+                        }
+                    } @else {
+                        <tr>
+                            <td colspan="3" class="no-data">No se encontraron facturas</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    } @else if (isLoading) {
+        <div class="results-info">
+            <p>Cargando facturas...</p>
+        </div>
+    }
+    @else if (hasSearched) {
+        <div class="results-info">
+            <p>No se encontraron facturas</p>
+        </div>
+    }
+</div>
