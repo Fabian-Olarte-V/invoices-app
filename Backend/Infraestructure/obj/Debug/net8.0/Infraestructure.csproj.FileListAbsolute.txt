@@ -1,0 +1,17 @@
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\bin\Debug\net8.0\Infraestructure.deps.json
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\bin\Debug\net8.0\Infraestructure.dll
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\bin\Debug\net8.0\Infraestructure.pdb
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\bin\Debug\net8.0\Application.dll
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\bin\Debug\net8.0\Domain.dll
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\bin\Debug\net8.0\Application.pdb
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\bin\Debug\net8.0\Domain.pdb
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\obj\Debug\net8.0\Infraestructure.csproj.AssemblyReference.cache
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\obj\Debug\net8.0\Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\obj\Debug\net8.0\Infraestructure.AssemblyInfoInputs.cache
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\obj\Debug\net8.0\Infraestructure.AssemblyInfo.cs
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\obj\Debug\net8.0\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\obj\Debug\net8.0\Infraest.B0D41582.Up2Date
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\obj\Debug\net8.0\Infraestructure.dll
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\obj\Debug\net8.0\refint\Infraestructure.dll
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\obj\Debug\net8.0\Infraestructure.pdb
+C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Infraestructure\obj\Debug\net8.0\ref\Infraestructure.dll

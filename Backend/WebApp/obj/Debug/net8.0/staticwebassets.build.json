@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "PwXKgWWUpnptZ7g8uuM2owRT9pwrfPPBamuEjGogUno=",
+  "Source": "WebApp",
+  "BasePath": "_content/WebApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApp\\wwwroot",
+      "Source": "WebApp",
+      "ContentRoot": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}
