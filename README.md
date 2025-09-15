@@ -42,6 +42,8 @@ Edita `backend/WebApp/appsettings.json` para **apuntar a tu base de datos** y fi
 Debes ubicarte dentro de la caprte de backend para ejecutar los siguientes comandos:
 - dotnet run --urls http://localhost:5248
 
+En dado caso de tener errores es mejor usar visual studio y abrir la solución directamente y ejecutar con el IDE.
+
 
 ## Configuración del Frontend (Angular)
 Debes tener en cuenta un ajuste importante para referenciar el proyecto de Backend con el de Frontend, en este caso debes ir a la archivo Fronted/Src/Environments/environments.ts y debes validar que la url sea la misma que el puerto del localhost donde esta corriendo el backend, ademas de poner /api seguido del localhost donde esta corriendo el backend. Si ejecutas el proyecto de .net en el puerto que mencioné ya no se debería preocupar por este ajuste, en dado caso que se ejecute en otro puerto se debe cambiar.
