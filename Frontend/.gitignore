@@ -36,3 +36,9 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Visual Studio / Rider / VS Code
+.vs/
+**/.vs/
+.idea/
+.vscode/
