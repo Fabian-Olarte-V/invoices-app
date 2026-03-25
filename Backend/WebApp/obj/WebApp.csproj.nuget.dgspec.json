@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\WebApp\\WebApp.csproj": {}
+    "D:\\Projects\\invoices-app\\Backend\\WebApp\\WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Application\\Application.csproj": {
+    "D:\\Projects\\invoices-app\\Backend\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\Projects\\invoices-app\\Backend\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Fabian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Application\\obj\\",
+        "projectPath": "D:\\Projects\\invoices-app\\Backend\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Professional\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\invoices-app\\Backend\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Fabian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Professional\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Domain\\Domain.csproj"
+              "D:\\Projects\\invoices-app\\Backend\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Projects\\invoices-app\\Backend\\Domain\\Domain.csproj"
               }
             }
           }
@@ -48,7 +48,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -82,29 +82,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Domain\\Domain.csproj": {
+    "D:\\Projects\\invoices-app\\Backend\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\invoices-app\\Backend\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Fabian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Domain\\obj\\",
+        "projectPath": "D:\\Projects\\invoices-app\\Backend\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Professional\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\invoices-app\\Backend\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Fabian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Professional\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -131,7 +145,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -147,29 +161,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Infraestructure\\Infraestructure.csproj": {
+    "D:\\Projects\\invoices-app\\Backend\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Infraestructure\\Infraestructure.csproj",
-        "projectName": "Infraestructure",
-        "projectPath": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Infraestructure\\Infraestructure.csproj",
-        "packagesPath": "C:\\Users\\Fabian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Infraestructure\\obj\\",
+        "projectUniqueName": "D:\\Projects\\invoices-app\\Backend\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "D:\\Projects\\invoices-app\\Backend\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Professional\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\invoices-app\\Backend\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Fabian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Professional\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -184,11 +212,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Application\\Application.csproj"
+              "D:\\Projects\\invoices-app\\Backend\\Application\\Application.csproj": {
+                "projectPath": "D:\\Projects\\invoices-app\\Backend\\Application\\Application.csproj"
               },
-              "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Domain\\Domain.csproj"
+              "D:\\Projects\\invoices-app\\Backend\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Projects\\invoices-app\\Backend\\Domain\\Domain.csproj"
               }
             }
           }
@@ -203,7 +231,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -214,6 +242,14 @@
               "version": "[6.1.1, )"
             },
             "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
               "target": "Package",
               "version": "[9.0.9, )"
             }
@@ -229,29 +265,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\WebApp\\WebApp.csproj": {
+    "D:\\Projects\\invoices-app\\Backend\\WebApp\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\WebApp\\WebApp.csproj",
+        "projectUniqueName": "D:\\Projects\\invoices-app\\Backend\\WebApp\\WebApp.csproj",
         "projectName": "WebApp",
-        "projectPath": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\WebApp\\WebApp.csproj",
-        "packagesPath": "C:\\Users\\Fabian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\WebApp\\obj\\",
+        "projectPath": "D:\\Projects\\invoices-app\\Backend\\WebApp\\WebApp.csproj",
+        "packagesPath": "C:\\Users\\Professional\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\invoices-app\\Backend\\WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Fabian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Professional\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -266,11 +316,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Application\\Application.csproj"
+              "D:\\Projects\\invoices-app\\Backend\\Application\\Application.csproj": {
+                "projectPath": "D:\\Projects\\invoices-app\\Backend\\Application\\Application.csproj"
               },
-              "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Infraestructure\\Infraestructure.csproj": {
-                "projectPath": "C:\\Users\\Fabian\\OneDrive\\Escritorio\\PruebaTecnica\\Backend\\Infraestructure\\Infraestructure.csproj"
+              "D:\\Projects\\invoices-app\\Backend\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\Projects\\invoices-app\\Backend\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -285,29 +335,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "FluentValidation": {
-              "target": "Package",
-              "version": "[12.0.0, )"
-            },
-            "FluentValidation.DependencyInjectionExtensions": {
-              "target": "Package",
-              "version": "[12.0.0, )"
-            },
-            "MediatR": {
-              "target": "Package",
-              "version": "[13.0.0, )"
-            },
-            "MediatR.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[11.1.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -319,6 +351,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -327,7 +377,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

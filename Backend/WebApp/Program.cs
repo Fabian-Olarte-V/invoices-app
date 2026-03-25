@@ -1,18 +1,13 @@
 using Application.DI;
-using Infraestructure.DI;
-using WebApp.Filters;
-
+using Infrastructure.DI;
+using Infrastructure.Initialization;
+using WebApp.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-// Add services to the container.
-builder.Services.AddControllers(options =>
-{
-    options.Filters.Add<GlobalExceptionFilter>();
-});
+builder.Services.AddControllers();
 builder.Services.AddApplication();
-builder.Services.AddInfraestructure(builder.Configuration);
+builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Services.AddCors(options =>
 {
@@ -20,28 +15,20 @@ builder.Services.AddCors(options =>
         policy =>
         {
             policy
-                .AllowAnyOrigin()  
+                .AllowAnyOrigin()
                 .AllowAnyHeader()
                 .AllowAnyMethod();
         });
 });
 
-
 var app = builder.Build();
 
+await app.Services.InitializeInfrastructureDatabaseAsync();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-}
-
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseCors("AllowAnyOriginPolicy");
-
 app.UseRouting();
 app.UseAuthorization();
 app.MapControllers();
-
-
 
 app.Run();

@@ -1,0 +1,42 @@
+# Build outputs
+**/bin/
+**/obj/
+artifacts/
+
+# Visual Studio / Rider / VS Code
+.vs/
+**/.vs/
+.idea/
+.vscode/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+build.log
+
+# Test / coverage
+TestResults/
+coverage/
+coverage-report/
+*.coverage
+*.coveragexml
+
+# Local .NET SDK/tooling caches
+.dotnet/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+!**/packages/build/
+!**/packages/repositories.config
+
+# OS files
+.DS_Store
+Thumbs.db

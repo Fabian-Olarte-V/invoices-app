@@ -1,8 +1,7 @@
-﻿using Application.DTOs;
+using Application.Common.Exceptions;
+using Application.DTOs;
 using Domain.AggregateModels.Invoice;
-using Domain.Exceptions;
 using MediatR;
-
 
 namespace Application.Queries.Invoices
 {
@@ -14,7 +13,6 @@ namespace Application.Queries.Invoices
         {
             _invoiceFinder = invoicesFinder;
         }
-
 
         public async Task<InvoiceResponseDto> Handle(GetInvoiceByNumberQuery request, CancellationToken cancellationToken)
         {

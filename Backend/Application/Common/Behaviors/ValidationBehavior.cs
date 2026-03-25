@@ -1,6 +1,6 @@
-﻿using FluentValidation;
+using Application.Common.Exceptions;
+using FluentValidation;
 using MediatR;
-
 
 namespace Application.Common.Behaviors
 {
@@ -13,7 +13,6 @@ namespace Application.Common.Behaviors
             _validators = validators;
         }
 
-
         public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
         {
             if (_validators.Any())
@@ -25,7 +24,15 @@ namespace Application.Common.Behaviors
                     .ToList();
 
                 if (failures.Any())
-                    throw new ValidationException(failures);
+                {
+                    var errors = failures
+                        .GroupBy(x => x.PropertyName)
+                        .ToDictionary(
+                            g => g.Key,
+                            g => g.Select(x => x.ErrorMessage).ToArray());
+
+                    throw new ApplicationValidationException(errors);
+                }
             }
 
             return await next();

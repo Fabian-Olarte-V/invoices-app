@@ -1,8 +1,7 @@
-﻿using Domain.AggregateModels.Client;
+using Application.Common.Exceptions;
+using Domain.AggregateModels.Client;
 using Application.DTOs;
 using MediatR;
-using Domain.Exceptions;
-
 
 namespace Application.Queries.Clients
 {

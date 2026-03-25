@@ -9,3 +9,15 @@ C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Domain\obj\Debug\net8.
 C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Users\Fabian\OneDrive\Escritorio\PruebaTecnica\Backend\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\Projects\invoices-app\Backend\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\Projects\invoices-app\Backend\Domain\bin\Debug\net8.0\Domain.dll
+D:\Projects\invoices-app\Backend\Domain\bin\Debug\net8.0\Domain.pdb
+D:\Projects\invoices-app\Backend\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\invoices-app\Backend\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\Projects\invoices-app\Backend\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\Projects\invoices-app\Backend\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\Projects\invoices-app\Backend\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+D:\Projects\invoices-app\Backend\Domain\obj\Debug\net8.0\Domain.dll
+D:\Projects\invoices-app\Backend\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\Projects\invoices-app\Backend\Domain\obj\Debug\net8.0\Domain.pdb
+D:\Projects\invoices-app\Backend\Domain\obj\Debug\net8.0\ref\Domain.dll

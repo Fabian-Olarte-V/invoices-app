@@ -1,8 +1,7 @@
-﻿using Application.DTOs;
+using Application.Common.Exceptions;
+using Application.DTOs;
 using Domain.AggregateModels.Invoice;
-using Domain.Exceptions;
 using MediatR;
-
 
 namespace Application.Queries.Invoices
 {
