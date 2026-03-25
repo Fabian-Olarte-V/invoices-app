@@ -65,10 +65,9 @@ export class InvoiceFormComponent {
     const product = this.products.find(p => p.id === +productId);
     
     if (product) {
-      const imageUrl = `data:image/${product.ext?.replace(".","").trim()};base64,${product.imageBase64}`;
       detailForm.patchValue({
         unitPrice: product.unitPrice,
-        imageUrl: imageUrl
+        imageUrl: this.buildProductImageUrl(product)
       });
 
       this.calculateDetailTotal(index);
@@ -143,6 +142,17 @@ export class InvoiceFormComponent {
     });
     
     this.detailsSignal.set([]);
+  }
+
+  private buildProductImageUrl(product: Product): string {
+    const extension = product.ext?.replace('.', '').trim();
+    const imageBase64 = product.imageBase64?.trim();
+
+    if (!extension || !imageBase64) {
+      return '';
+    }
+
+    return `data:image/${extension};base64,${imageBase64}`;
   }
 }
 
