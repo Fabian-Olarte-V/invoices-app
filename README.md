@@ -1,58 +1,112 @@
-# App De Facturas - Prueba tecnica
+# Invoices App
 
-Este repositorio contiene una API en **.NET** y una proyecto en **Angular** para crear y listar facturas.  
-El objetivo es levantar ambos proyectos en local y conectarlos entre sí.
+Full-stack technical project built to demonstrate backend engineering fundamentals, SQL Server integration, and a reproducible local environment with Docker.
 
-## Estructura del repositorio
-En el repositorio estan 2 carpetas con los 2 proyectos a utilizar, la carpeta Backend contiene el proyecto de .Net y la carpeta Frontend tiene el proyecto de Angular.
+## What This Project Demonstrates
 
+- Layered backend structure inspired by Clean Architecture
+- Command/query separation with `MediatR`
+- Input validation with `FluentValidation`
+- Centralized exception handling with custom middleware
+- SQL Server integration through `Stored Procedures`
+- Automatic database creation, schema setup, and seed data loading at startup
+- End-to-end local setup with `Docker Compose`
+- Functional Angular frontend focused on consuming the API and completing the invoice flow
 
-## 🔧 Requisitos
-- **.NET SDK 8.0+**
-- **Node.js 22+** y **npm**
-- **Angular CLI** (`npm i -g @angular/cli`)
-- **SQL Server** en local o accesible por red (SQL Server 2019+)
+## Scope
 
+The application supports:
 
-## 🗄️ Base de datos (SQL Server)
-1. Asegúrate de tener una instancia de SQL Server corriendo.
-2. Se da por hecho de que ya existe la base de datos, en dado caso de que no exista, crea la base de datos y los stored Procedures requeridos (En la carpeta de Backend/Infraestructure/Scripts estan los scripts SQL para levantar las tablas y los store procedures (Es importante que la base de datos debe usar los mismos nombres de las tablas y propiedades que en la documentación dada).
-3. Copia la **cadena de conexión** de tu instancia (servidor, db, usuario, contraseña). Ejemplo de cadena para usar: Server=localhost,1433;Database=DevLab;User Id=developer;Password=abc123ABC;Encrypt=False;TrustServerCertificate=True;
+- Listing clients
+- Listing products
+- Creating invoices
+- Searching invoices by invoice number
+- Searching invoices by client
 
+## Architecture Overview
 
-## Configuración del backend (.NET)
-Edita `backend/WebApp/appsettings.json` para **apuntar a tu base de datos** y fijar el **puerto 5248**:
+### Backend
 
-```json
-{
-    "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning"
-    }
-  },
-  "AllowedHosts": "*",
-  "ConnectionStrings": {
-    "database": "Server=localhost,1433;Database=DevLab;User Id=developer;Password=abc123ABC;Encrypt=False;TrustServerCertificate=True;"
-  }
-}
+The backend is split into four projects:
+
+- `Domain`: core entities and domain contracts
+- `Application`: use cases, DTOs, validation, and application behaviors
+- `Infrastructure`: SQL Server access, stored procedure execution, database initialization, and technical wiring
+- `WebApp`: HTTP API, middleware, and application bootstrap
+
+This is not presented as a strict textbook implementation of Clean Architecture. The goal was to apply the main ideas in a pragmatic way:
+
+- separation between business flow and infrastructure concerns
+- inward-facing dependencies
+- persistence behind abstractions
+- composition rooted in the API layer
+
+### Frontend
+
+The frontend was intentionally kept simple.
+
+The goal was not to build a highly abstracted UI architecture or advanced client-side state management. The focus was:
+
+- API integration
+- reactive forms
+- invoice creation flow
+- clear, working UI
+
+This was a deliberate trade-off to keep the project centered on backend design and end-to-end delivery.
+
+## Database and Stored Procedures
+
+The project uses `SQL Server` and relies on `Stored Procedures` for data access.
+
+On application startup, the backend:
+
+1. checks the database connection
+2. creates the target database if it does not exist
+3. runs the table creation script
+4. runs the stored procedure scripts
+5. inserts seed data
+
+This allows the project to be started from scratch without manual database setup.
+
+## Tech Stack
+
+- `.NET 8`
+- `ASP.NET Core Web API`
+- `Angular`
+- `SQL Server 2022`
+- `Docker`
+- `Docker Compose`
+- `MediatR`
+- `FluentValidation`
+
+## Running the Project
+
+### Requirements
+
+- Docker
+- Docker Compose
+
+### Start
+
+From the repository root:
+
+```bash
+docker compose up --build
 ```
 
-## Ejecución del proyecto Backend (.NET)
-Debes ubicarte dentro de la caprte de backend para ejecutar los siguientes comandos:
-- dotnet run --urls http://localhost:5248
+Exposed services:
 
-En dado caso de tener errores es mejor usar visual studio y abrir la solución directamente y ejecutar con el IDE.
+- Frontend: `http://localhost`
+- Backend: `http://localhost:8080`
+- SQL Server: `localhost:1433`
 
+## Environment Setup
 
-## Configuración del Frontend (Angular)
-Debes tener en cuenta un ajuste importante para referenciar el proyecto de Backend con el de Frontend, en este caso debes ir a la archivo Fronted/Src/Environments/environments.ts y debes validar que la url sea la misma que el puerto del localhost donde esta corriendo el backend, ademas de poner /api seguido del localhost donde esta corriendo el backend. Si ejecutas el proyecto de .net en el puerto que mencioné ya no se debería preocupar por este ajuste, en dado caso que se ejecute en otro puerto se debe cambiar.
+The `.env` file contains the database host, port, credentials, and database name used by `docker compose`.
 
-```export const API_BASE_URL = 'http://{localhost:puerto}/api';```</pre>
+## Notes
 
-
-## Ejecución del proyecto Frontend (Angular)
-Debes ubicarte dentro de la caprte de frontend para ejecutar los siguientes comandos:
-
-- npm install
-- ng serve --port 4200
+- The database is recreated on startup while `ResetOnStartup` is enabled
+- This project is intended as a technical showcase, not a production-ready system
+- The strongest emphasis is on backend structure, SQL Server integration, and environment automation
+- The frontend is intentionally lightweight and functional rather than architecturally complex
